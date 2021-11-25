@@ -1,0 +1,193 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.container{
+    display: grid;
+    grid-template:
+    "header header" 100px
+     "main right" 1fr/
+    1fr  1fr;
+    background-color:rgb(255, 174, 0)
+    
+      
+}
+
+.header{
+    grid-area: header;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    
+
+}
+.header > h1{
+    font-style: initial;
+    margin: 30px;
+    font-weight: bolder;
+    color: rgb(139, 130, 238);
+    background-color: rgb(234, 245, 212);
+    border-radius: 50px;
+}
+
+#prices{
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: rgb(234, 245, 212);
+    padding: 10px 20px;
+    display: inline-block;
+    letter-spacing: 2px;
+    border-radius: 50px;
+    margin-top: 25px;
+}
+#vehicles{
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: rgb(234, 245, 212);
+    padding: 10px 20px;
+    display: inline-block;
+    letter-spacing: 2px;
+    border-radius: 50px;
+    margin-top: 25px;
+}
+#offers{
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: rgb(234, 245, 212);
+    padding: 10px 20px;
+    display: inline-block;
+    letter-spacing: 2px;
+    border-radius: 50px;
+    margin-top: 25px;
+}
+#home{
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: rgb(234, 245, 212);
+    padding: 10px 20px;
+    display: inline-block;
+    letter-spacing: 2px;
+    border-radius: 50px;
+    margin-top: 25px;
+
+}
+
+.main{
+    grid-area: main;
+    display: grid;
+    grid-template-rows: 500px 1fr   
+  
+}
+
+.carDataEl{
+    margin: 50px;
+}
+
+.reserve-form{
+    margin-left: 30px;
+    background-color: rgb(234, 245, 212);
+    text-align:center;
+    border-radius: 5%;
+    position: sticky;
+    bottom: 0;
+   
+    
+
+   
+}
+.h3{
+    margin-left: 10px;
+    
+}
+.select-car-type{
+    margin-top: 1rem;
+    margin-left: 10px;
+    background-color: rgb(255, 174, 0);
+   
+    width: 20rem;
+    height: 2rem;
+
+    
+    
+
+}
+
+.pickup-date input{
+    margin-top: 1rem;
+    margin-left: 10px;
+    background-color: rgb(255, 174, 0);
+    
+    width: 20rem;
+    height: 2rem;
+}
+
+.select-cities{
+    margin-top: 1rem;
+    margin-left: 10px;
+    background-color: rgb(255, 174, 0);
+   
+    width: 15rem;
+    height: 2rem;
+}
+
+.return-date input{
+    margin-top: 1rem;
+    text-decoration: none;
+    background-color: rgb(255, 174, 0);
+   
+    width: 20rem;
+    height: 2rem;
+}
+.cartype{
+    
+}
+.pickupdate{
+    
+
+}
+
+.reserve button{
+    
+    text-decoration: none;
+    background-color: rgb(255, 174, 0);
+    padding: 20px 20px;
+    letter-spacing: 2px;
+    
+    margin-top: 20px;
+}
+
+.right{
+    grid-area: right;
+    display: grid;
+    scroll-behavior: smooth;
+    
+    
+    
+    
+}
+
+
+
+@media screen and (max-width: 800px) {
+    .container{
+        display: grid;
+    grid-template:
+    "header " 100px
+     "main " 1fr/
+    600px  ;
+    height: 100vh;
+    border: solid black;
+    }
+    .right{
+        display:none ;
+    }
+}
+html{
+    scroll-behavior: smooth;
+}
+
+script{
+    scroll-behavior: smooth;
+}

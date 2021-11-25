@@ -1,0 +1,51 @@
+{
+    "cars": [
+        {
+            "id":1,
+            "typeOfCar": "toyota corolla",
+            "year": 2019,
+            "color": "white",
+            "image": "asset/toyota-corolla.jpeg",
+            "priceDaily":30,
+            "quantity": 1
+
+        },
+        {
+            "id":2,
+            "typeOfCar": "hyundia-elantra",
+            "year": 2020,
+            "color": "blue",
+            "image": "asset/hyundia-elantra.png",
+            "priceDaily":30,
+            "quantity": 4   
+        },
+        {
+            "id":3,
+            "typeOfCar": "kia rio",
+            "year": 2019,
+            "color": "grey",
+            "image": "asset/kia-rio.jpeg",
+            "priceDaily":20,
+            "quantity": 2
+        },
+        {
+            "id":1,
+            "typeOfCar": "toyota landcruiser",
+            "year": 2019,
+            "color": "black",
+            "image": "asset/toyota-land-cruiser.jpeg",
+            "priceDaily":80,
+            "quantity": 1
+        },
+        {
+            "id":1,
+            "typeOfCar": "BMW 1 series",
+            "year": 2019,
+            "color": "blue",
+            "image": "asset/BMW-1series.jpeg",
+            "priceDaily":40,
+            "quantity": 1
+        }
+    ]
+}
+    
