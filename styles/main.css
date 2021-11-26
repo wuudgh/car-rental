@@ -73,6 +73,21 @@
     margin-top: 25px;
 
 }
+.render-header-vehicle-img{
+    border-radius: 5%;
+    margin: 2rem;
+}
+
+.render-header-cars{
+    border-radius: 5%;
+    margin: 2rem;
+
+}
+
+.render-header-prices{
+    margin-left: 2rem;
+    font: caption;
+}
 
 .main{
     grid-area: main;

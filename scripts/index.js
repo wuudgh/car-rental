@@ -49,7 +49,9 @@ function renderHeaderPrices(){
             const carDataTypeEl = document.createElement("h2");
             carDatadivEl.append(carDataEl);
             carDataEl.innerText = carData.cars[i].priceDaily
+            carDataEl.className = "render-header-prices"
             carDataTypeEl.innerText = carData.cars[i].typeOfCar
+            carDataTypeEl.className = "render-header-cars"
             //console.log(carData.prices[i])
             main.append(carDataEl);
             main.append(carDataTypeEl);
@@ -77,6 +79,8 @@ function renderHeaderVehicles(){
             carImageEl.setAttribute("src", `${carData.image[i]}`);
             carImageEl.setAttribute("alt", `${carData.image[i]}`);
             carImageEl.setAttribute("width", "500px");
+            carImageEl.className = "render-header-vehicle-img"
+            
 
             carImageDivEl.append(carImageEl);
             main.append(carImageDivEl);
@@ -95,21 +99,21 @@ function renderAside(){
       //console.log("man")
        const carTypeSelect = document.querySelector(".select-car-type")
        //reserveForm.append(carTypeSelect);
-       //console.log(carTypeSelect.value);
        const carType = carTypeSelect.value;
-       //reserveForm.append(carType)
+       console.log(carTypeSelect.value);
+       //carTypeSelect.append(carType);
 
        const pickUpDateInput = document.querySelector(".pickup-date input")
        const pickUpDate = pickUpDateInput.value;
-       //console.log(pickUpDateInput.value)
+       console.log(pickUpDateInput.value)
 
        const returnDateInput = document.querySelector(".return-date input")
        const returnDate = returnDateInput.value;
-       //console.log(returnDateInput.value)
+       console.log(returnDateInput.value)
 
        const citySelect = document.querySelector(".select-cities")
        const cityName =citySelect.value;
-       //console.log(citySelect.value)
+       console.log(citySelect.value)
 
 
     })
