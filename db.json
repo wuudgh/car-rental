@@ -1,51 +1,112 @@
 {
-    "cars": [
-        {
-            "id":1,
-            "typeOfCar": "toyota corolla",
-            "year": 2019,
-            "color": "white",
-            "image": "asset/toyota-corolla.jpeg",
-            "priceDaily":30,
-            "quantity": 1
-
-        },
-        {
-            "id":2,
-            "typeOfCar": "hyundia-elantra",
-            "year": 2020,
-            "color": "blue",
-            "image": "asset/hyundia-elantra.png",
-            "priceDaily":30,
-            "quantity": 4   
-        },
-        {
-            "id":3,
-            "typeOfCar": "kia rio",
-            "year": 2019,
-            "color": "grey",
-            "image": "asset/kia-rio.jpeg",
-            "priceDaily":20,
-            "quantity": 2
-        },
-        {
-            "id":1,
-            "typeOfCar": "toyota landcruiser",
-            "year": 2019,
-            "color": "black",
-            "image": "asset/toyota-land-cruiser.jpeg",
-            "priceDaily":80,
-            "quantity": 1
-        },
-        {
-            "id":1,
-            "typeOfCar": "BMW 1 series",
-            "year": 2019,
-            "color": "blue",
-            "image": "asset/BMW-1series.jpeg",
-            "priceDaily":40,
-            "quantity": 1
-        }
-    ]
+  "cars": [
+    {
+      "id": 1,
+      "typeOfCar": "toyota corolla",
+      "year": 2019,
+      "color": "white",
+      "image": "asset/toyota-corolla.jpeg",
+      "priceDaily": 30,
+      "quantity": 1
+    },
+    {
+      "id": 2,
+      "typeOfCar": "hyundia-elantra",
+      "year": 2020,
+      "color": "blue",
+      "image": "asset/hyundia-elantra.png",
+      "priceDaily": 30,
+      "quantity": 4
+    },
+    {
+      "id": 3,
+      "typeOfCar": "kia rio",
+      "year": 2019,
+      "color": "grey",
+      "image": "asset/kia-rio.jpeg",
+      "priceDaily": 20,
+      "quantity": 2
+    },
+    {
+      "id": 1,
+      "typeOfCar": "toyota landcruiser",
+      "year": 2019,
+      "color": "black",
+      "image": "asset/toyota-land-cruiser.jpeg",
+      "priceDaily": 80,
+      "quantity": 1
+    },
+    {
+      "id": 1,
+      "typeOfCar": "BMW 1 series",
+      "year": 2019,
+      "color": "blue",
+      "image": "asset/BMW-1series.jpeg",
+      "priceDaily": 40,
+      "quantity": 1
+    },
+    {
+      "carType": "toyota",
+      "pickUpDate": "2021-11-20",
+      "returnDate": "2021-11-20",
+      "cityName": "accra",
+      "id": 4
+    },
+    {
+      "carType": "kia",
+      "pickUpDate": "2021-12-05",
+      "returnDate": "2021-11-30",
+      "cityName": "cape",
+      "id": 5
+    },
+    {
+      "carType": "toyota",
+      "pickUpDate": "2021-11-02",
+      "returnDate": "2021-11-13",
+      "cityName": "accra",
+      "id": 6
+    },
+    {
+      "carType": "toyota",
+      "pickUpDate": "",
+      "returnDate": "",
+      "cityName": "accra",
+      "id": 7
+    },
+    {
+      "carType": "toyota",
+      "pickUpDate": "",
+      "returnDate": "",
+      "cityName": "accra",
+      "id": 8
+    },
+    {
+      "carType": "toyota",
+      "pickUpDate": "",
+      "returnDate": "",
+      "cityName": "accra",
+      "id": 9
+    },
+    {
+      "carType": "toyota",
+      "pickUpDate": "2021-11-28",
+      "returnDate": "2021-11-21",
+      "cityName": "accra",
+      "id": 10
+    },
+    {
+      "carType": "BMW",
+      "pickUpDate": "2021-11-28",
+      "returnDate": "2021-12-12",
+      "cityName": "kumasi",
+      "id": 11
+    },
+    {
+      "carType": "BMW",
+      "pickUpDate": "2021-11-20",
+      "returnDate": "2021-12-05",
+      "cityName": "kumasi",
+      "id": 12
+    }
+  ]
 }
-    
