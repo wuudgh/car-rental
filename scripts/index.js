@@ -99,26 +99,55 @@ function renderAside(){
       //console.log("man")
        const carTypeSelect = document.querySelector(".select-car-type")
        //reserveForm.append(carTypeSelect);
-       const carType = carTypeSelect.value;
-       console.log(carTypeSelect.value);
+       //const carType = carTypeSelect.value;
+       //console.log(carTypeSelect.value);
        //carTypeSelect.append(carType);
 
        const pickUpDateInput = document.querySelector(".pickup-date input")
-       const pickUpDate = pickUpDateInput.value;
-       console.log(pickUpDateInput.value)
+       //const pickUpDate = pickUpDateInput.value;
+       //console.log(pickUpDateInput.value)
 
        const returnDateInput = document.querySelector(".return-date input")
-       const returnDate = returnDateInput.value;
-       console.log(returnDateInput.value)
+       //const returnDate = returnDateInput.value;
+       //console.log(returnDateInput.value)
 
        const citySelect = document.querySelector(".select-cities")
-       const cityName =citySelect.value;
-       console.log(citySelect.value)
-
-
+       //const cityName =citySelect.value;
+       //console.log(citySelect.value)
+       const carInfo = {
+           "carType": carTypeSelect.value,
+           "pickUpDate": pickUpDateInput.value,
+           "returnDate": returnDateInput.value,
+           "cityName": citySelect.value
+       }
+       console.log(citySelect.value);
+       addUser(carInfo);
     })
-
 }
+function addUser(cars){
+    let carsId;
+    fetch("http://localhost:3000/cars", {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(cars)
+    })
+    .then(function (value) {
+        console.log(value,"value")
+        const carsId = value.id
+        const userInfo = {
+            "carType": cars.carType,
+            "pickUpDate": cars.pickUpDate,
+            "returnData": cars.returnData,
+            "ciyNmae" : cars.city,
+        }
+    })
+    
+
+    
+}
+
 
 
 function createHomePage(){
@@ -135,6 +164,7 @@ function createHomePage(){
     imgEl.setAttribute("width", '1500px')
     main.append(imgEl);
     })
+    
 
 
 }
@@ -144,3 +174,4 @@ renderHeaderPrices();
 renderHeaderVehicles();
 renderAside();
 createHomePage();
+
